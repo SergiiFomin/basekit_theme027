@@ -1,0 +1,113 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">    
+    <div class="global">
+        <!--top-->
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        {{widget('content', 'list', {content: '<ul class="top-list"><li><a href="#">Contact an Inspector</a></li><li><a href="#">Get the Zoning Manual</a></li><li><a href="#">Pay or View Invoice</a></li><li><a href="#">Get Clearance Handbook</a></li><li><a href="#">Mission</a></li></ul>', lines: 'all'})|raw}}
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <div class="row">
+                                <article class="span6">
+                                    {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                                </article>
+                                <article class="span6">
+                                    {{widget('content', 'topcontact', {content: '<div class="topcontact"><span class="phone">(800) 234-5678</span><br />8901 MARMORA ROAD, GLASGOW, D04 89GR</div>', lines: 'all'})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--navigation-->
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="showcase">
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+
+                        {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'crop':1, 'transSpeed': '1000', 'transType': 'fade', 'showDescription': false, 'showTitle': false, 'showButtons': false, 'showBullets': true, 'allowPause': false, 'allowLoop': true, 'images':[{'imageHeight':'396', 'imageWidth':'1170', 'url':asset('/images/slider/slide-1.jpg'), 'title':'title', 'description': 'Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo'}, {'imageHeight':'396','imageWidth':'1170', 'url':asset('/images/slider/slide-2.jpg'), 'title':'title', 'description': 'Aenean aliquet suscipit velit, sed gravida sem egestas quis. Praesent semper vitae nisl porta ornare.'}, {'imageHeight':'396', 'imageWidth':'1170', 'url':asset('/images/slider/slide-3.jpg'), 'title':'title', 'description': 'Nam blandit elementum dolor sit amet condimentum. Praesent sodales nunc id hendrerit sollicitudin.'}]})|raw}}
+
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+        <div class="container">
+            <div class="row">
+                <article class="span12">
+                    <div class="row">
+                        <article class="span4">
+                            {{widget('content', 'text1', {content: '<div class="colorcontent"><h1>Welcome!</h1>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet conse ctetur adipisicing.</div>', lines: 'all'})|raw}}
+                            {{widget('content', 'title1', {content: '<h2>What`s New</h2>', lines: 'all'})|raw}}
+                            {{widget('content', 'text2', {content: '<p class="colororange">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', lines: 'all'})|raw}}
+                            {{widget('line', 'line', {'thickness': 'inherit', 'padding': 'inherit', 'length':'inherit', 'align': 'center'})|raw}}
+                            {{widget('content', 'text3', {content: '<p class="colorblack">Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button1', {italic: false, text:'Read More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span4">
+                            {{widget('content', 'title1', {content: '<h2>Most Popular</h2>', lines: 'all'})|raw}}
+                            {{widget('content', 'text2', {content: '<ul class="item-list"><li><a href="#">Parallel Design-Permitting Process</a></li><li><a href="#">Restaurant and Hospitality Express Program</a></li><li><a href="#">Product Approval/Research Reports</a></li><li><a href="#">Building and Safety Newsletter</a></li><li><a href="#">Zoning Manual and Commentary</a></li><li><a href="#">Wood Frame Prescriptive Provisions (WFPP)</a></li><li><a href="#">Building Permit Clearance Handbook</a></li><li><a href="#">Vacant Abated Buildings</a></li><li><a href="#">Request for Modification</a></li><li><a href="#">Request for Extension of Time</a></li><li><a href="#">Restaurant and Hospitality Express Request</a></li><li><a href="#">Contractual Opportunities</a></li><li><a href="#">Request an Inspection</a></li><li><a href="#">Prevailing Setback Calculator</a></li></ul>', lines: 'all'})|raw}}
+                            {{widget('button', 'button2', {italic: false, text:'Read More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                        <article class="span4">
+                            {{widget('content', 'text3', {content: '<div class="colorcontent"><h2>Find an Office/Hours</h2>Visit us at one of the following Building and Safety office locations:<span>Monday - Friday: 7:30 am - 4:30 pm</span>Wednesday: 9:00 am - 4:30 pm</div>', lines: 'all'})|raw}}
+                            {{widget('content', 'title1', {content: '<h2>City Links</h2>', lines: 'all'})|raw}}
+                            <figure>{{widget('image', 'image1', { 'src': asset('images/pages/page1-img1.jpg'), 'imageWidth': '480px'})|raw}}</figure>
+                            {{widget('content', 'text4', {content: '<p class="colorblack">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button3', {italic: false, text:'Read More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                        </article>
+                    </div>
+
+                    {{zone('main')|raw}}
+
+                </article>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="span12">
+                        <div class="row">
+                            <article class="span6">
+                                {{widget('companyname', 'companyname', {"business": "Name"})|raw}}
+                                {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'© Copyright 2014. All rights reserved'})|raw}}
+                            </article>
+                            <article class="span6">
+                                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</div>
+
+{% endblock %}
