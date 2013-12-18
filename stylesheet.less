@@ -1441,7 +1441,9 @@ div[id$="team"] {
 
 /* Large desktop */
 @media (max-width: 1200px) {
-
+  .topcontact {
+    background-position: 0 top;
+  }
 } 
 
 /*== Up to 980px ======================================================
@@ -1449,7 +1451,9 @@ div[id$="team"] {
 
 /* Narrow desktop */
 @media (max-width: 980px) {
-
+  ul.top-list li {
+    padding: 0 8px;
+  }
 }
 
 /*== Up to 980px and beyond 768px ======================================
@@ -1464,6 +1468,24 @@ div[id$="team"] {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px){
+  ul.top-list li {
+    border: none;
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+  .widget.logo {
+    text-align: center;
+  }
+  .topcontact {
+    background: none;
+    min-height: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .responsiveslideshow .slideshow-widget > ul.slideshow-image-list {
+    height: 270px;
+  }
 
   /* NAV */
   .widget.extendednavigation {
@@ -1534,6 +1556,9 @@ div[id$="team"] {
 
 @media (max-width: 640px) {
 
+  .responsiveslideshow .slideshow-widget > ul.slideshow-image-list {
+    height: 220px;
+  }
 }
 
 /*== Up to 480px ==================================================
@@ -1541,57 +1566,11 @@ div[id$="team"] {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
-  /* NAV */
-  .widget.extendednavigation {
-    display: block;
-    width: 100%;
-    ul {
-      display: block;
-      width: 100%;
-      float: left;
-      margin: 0;
-      li {
-        display: block!important;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        a{
-        }
-        &:hover {
-          > ul {
-            background-color: darken(@color-swatch2,3%);
-            width: 100%!important;
-            margin: 0;
-            > li {
-              display: block!important;
-              text-align: center;
-              > a {
-                padding: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
-    /* NAV ICON */
-    .widget .extendednavigation a.pull {
-      display: block;
-      width: 100%;
-      position: absolute;
-      top: 6px;
-      &:after {
-        content:"";
-        background: image('/images/nav-icon.png') no-repeat;
-        background-position: center;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: -41px;
-      }
-    }
+  .responsiveslideshow .slideshow-widget > ul.slideshow-image-list {
+    height: 130px;
+  }
+  .topcontact {
+    padding: 0 0 40px;
   }
 }
 
